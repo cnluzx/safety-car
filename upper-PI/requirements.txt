@@ -1,0 +1,18 @@
+# 上位机 Python 依赖（香橙派 5 Pro / RK3588）
+#
+# 注意：rknnlite 不在 PyPI，必须用 Rockchip 官方 wheel：
+#   https://github.com/airockchip/rknn-toolkit2  ->  rknn-toolkit-lite2/packages/
+#   pip install rknn_toolkit_lite2-<ver>-cp<py>-cp<py>-linux_aarch64.whl
+#
+# 板端建议优先用系统包（带 V4L2/GStreamer 支持，比 pip 版稳）：
+#   sudo apt install python3-opencv python3-tk
+
+numpy>=1.21
+opencv-python>=4.5
+pyserial>=3.5
+pygame>=2.1
+
+# 系统包（无法 pip 安装）：
+#   rknn-toolkit-lite2   Rockchip 官方 wheel
+#   python3-opencv       apt
+#   python3-tk           apt（OLED 显示用）

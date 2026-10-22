@@ -1,0 +1,36 @@
+# ── 运行产物 ──
+logs/
+datasets/
+sound/
+*.mp3
+*.jpg
+*.png
+!upper-PI/tools/camera_resolutions.jpg
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+
+# ── ESP-IDF ──
+lower-ESP/build/
+lower-ESP/sdkconfig
+lower-ESP/sdkconfig.old
+lower-ESP/managed_components/
+lower-ESP/dependencies.lock
+
+# ── 编辑器 / 系统 ──
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── 本地备份与临时文件 ──
+*.bak
+*.bak_*
+_整理前备份_*.zip
+_模型清单_*.json
+*_备份_*.zip

@@ -1,0 +1,28 @@
+# ESP-IDF 生成物
+build/
+sdkconfig
+sdkconfig.old
+sdkconfig.ci
+
+# 依赖与工具
+managed_components/
+dependencies.lock
+.vscode/
+
+# 编译中间文件
+*.o
+*.obj
+*.d
+*.a
+*.elf
+*.bin
+*.map
+*.su
+
+# 本地备份 / 临时文件
+*.bak
+*.bak_*
+*~
+.DS_Store
+Thumbs.db
+__pycache__/
